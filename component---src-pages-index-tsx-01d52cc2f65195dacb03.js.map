@@ -1,0 +1,1 @@
+{"version":3,"file":"component---src-pages-index-tsx-01d52cc2f65195dacb03.js","mappings":"0HAMA,UAJkB,kBACd","sources":["webpack://my-blog/./src/pages/index.tsx"],"sourcesContent":["import * as React from 'react'\n\nconst IndexPage = () => (\n    <div>asdfsdfdf</div>\n)\n\nexport default IndexPage\n"],"names":[],"sourceRoot":""}
