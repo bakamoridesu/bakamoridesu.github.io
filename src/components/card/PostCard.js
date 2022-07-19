@@ -4,28 +4,22 @@ import {
   cardTitle,
   cardDescription,
   noDecoration,
-  cardHovered,
   cardFooter,
   readMore,
-  datePublished
+  datePublished,
+  rightArrow
 } from './card.module.css';
 import {Link} from "gatsby";
-import {useState} from "react";
-import cn from 'classnames';
 
 export const PostCard = ({slug, title, description, date}) => {
-  const [hovered, setHovered] = useState(false)
-
   return (
     <Link to={slug}
           className={noDecoration}
     >
       <div
         className={cardWrapper}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
       >
-        <h3 className={cn(cardTitle, hovered ? cardHovered : '')}>
+        <h3 className={cardTitle}>
           {title}
         </h3>
         <div className={cardDescription}>
@@ -33,7 +27,7 @@ export const PostCard = ({slug, title, description, date}) => {
         </div>
         <div className={cardFooter}>
           <div className={readMore}>
-            Читать дальше <span className={hovered ? cardHovered : ''}>&rarr;</span>
+            Читать дальше <span className={rightArrow}>&rarr;</span>
           </div>
           <div className={datePublished}>
             {date}

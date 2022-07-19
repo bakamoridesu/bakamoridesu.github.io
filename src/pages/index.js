@@ -10,7 +10,7 @@ const IndexPage = () => {
                   frontmatter {
                       title
                       description
-                      date(fromNow: true)
+                      date(locale: "ru", fromNow: true)
                   }
                   id
                   slug
