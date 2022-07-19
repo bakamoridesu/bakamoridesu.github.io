@@ -1,5 +1,14 @@
 import * as React from 'react';
-import {cardWrapper, cardTitle, cardDescription, noDecoration, cardHovered, cardFooter, readMore, datePublished } from './card.module.css';
+import {
+  cardWrapper,
+  cardTitle,
+  cardDescription,
+  noDecoration,
+  cardHovered,
+  cardFooter,
+  readMore,
+  datePublished
+} from './card.module.css';
 import {Link} from "gatsby";
 import {useState} from "react";
 import cn from 'classnames';
